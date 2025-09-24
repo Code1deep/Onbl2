@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hébergement social – La Corbeille Solidaire</title>
+  <style>
+    body {margin:0;font-family:Arial,sans-serif;color:#333;}
+    header {background:#2c3e50;color:#fff;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;}
+    header img {height:40px;}
+    nav a {color:#fff;text-decoration:none;margin:0 10px;}
+    .lang-switcher {color:#fff;margin-left:20px;}
+    main {padding:40px 20px;max-width:800px;margin:auto;}
+    .back {display:inline-block;margin-bottom:20px;background:#d35400;color:#fff;padding:10px 15px;text-decoration:none;border-radius:4px;}
+    footer {background:#2c3e50;color:#fff;text-align:center;padding:10px;font-size:0.9rem;}
+    .en {display:none;}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="https://via.placeholder.com/150x40?text=Logo" alt="Logo provisoire">
+    </div>
+    <nav>
+      <a href="index.html" class="fr">Accueil</a>
+      <a href="index.html" class="en">Home</a>
+      <a href="index.html#departements" class="fr">Activités</a>
+      <a href="index.html#departements" class="en">Activities</a>
+      <a href="index.html#contact" class="fr">Contact</a>
+      <a href="index.html#contact" class="en">Contact</a>
+    </nav>
+    <div class="lang-switcher">
+      <a href="#" onclick="setLang('fr')">FR</a> | 
+      <a href="#" onclick="setLang('en')">EN</a>
+    </div>
+  </header>
+
+  <main>
+    <a href="index.html" class="back fr">← Retour à l'accueil</a>
+    <a href="index.html" class="back en">← Back to Home</a>
+
+    <h1 class="fr">Hébergement social</h1>
+    <h1 class="en">Social Housing</h1>
+
+    <p class="fr">
+      La Corbeille Solidaire offre un hébergement temporaire aux personnes sans-abri.
+      Notre mission est de fournir un lieu sûr, un accompagnement social et des services
+      de réinsertion afin de permettre à chacun de retrouver son autonomie.
+    </p>
+    <p class="en">
+      La Corbeille Solidaire provides temporary housing for homeless people.
+      Our mission is to offer a safe place, social support and reintegration services to help
+      each person regain autonomy.
+    </p>
+
+    <h2 class="fr">Services proposés</h2>
+    <h2 class="en">Services Offered</h2>
+    <ul class="fr">
+      <li>Chambres temporaires et repas</li>
+      <li>Suivi social personnalisé</li>
+      <li>Ateliers de réinsertion professionnelle</li>
+    </ul>
+    <ul class="en">
+      <li>Temporary rooms and meals</li>
+      <li>Personalized social follow-up</li>
+      <li>Professional reintegration workshops</li>
+    </ul>
+
+    <h2 class="fr">Nous contacter</h2>
+    <h2 class="en">Contact Us</h2>
+    <p class="fr">Pour toute information ou demande d’hébergement, contactez notre équipe à <a href="mailto:info@corbeillesolidaire.org">info@corbeillesolidaire.org</a></p>
+    <p class="en">For any information or housing request, contact our team at <a href="mailto:info@corbeillesolidaire.org">info@corbeillesolidaire.org</a></p>
+  </main>
+
+  <footer>
+    <p class="fr">© 2025 La Corbeille Solidaire – Tous droits réservés</p>
+    <p class="en">© 2025 La Corbeille Solidaire – All rights reserved</p>
+  </footer>
+
+  <script>
+    function setLang(lang){
+      document.querySelectorAll('.fr').forEach(el=>el.style.display= lang==='fr'?'':'none');
+      document.querySelectorAll('.en').forEach(el=>el.style.display= lang==='en'?'':'none');
+    }
+    setLang('fr');
+  </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Corbeille Solidaire – Accueil</title>
+  <style>
+    body {margin:0;font-family:Arial,sans-serif;color:#333;}
+    header {background:#2c3e50;color:#fff;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;}
+    header img {height:40px;}
+    nav a {color:#fff;text-decoration:none;margin:0 10px;}
+    .lang-switcher {color:#fff;margin-left:20px;}
+    .hero {text-align:center;padding:60px 20px;}
+    .hero button {background:#d35400;color:#fff;border:none;padding:10px 20px;margin:10px;font-size:1rem;cursor:pointer;}
+    .departements {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;padding:20px;}
+    .departement {background:#f5f5f5;padding:15px;border-radius:8px;text-align:center;}
+    section {padding:40px 20px;text-align:center;}
+    form {max-width:400px;margin:0 auto;text-align:left;}
+    input,textarea {width:100%;padding:8px;margin-bottom:10px;}
+    button.submit {background:#2c3e50;color:#fff;border:none;padding:10px 20px;cursor:pointer;}
+    footer {background:#2c3e50;color:#fff;text-align:center;padding:10px;font-size:0.9rem;}
+    .en {display:none;} /* par défaut FR visible */
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="https://via.placeholder.com/150x40?text=Logo" alt="Logo provisoire">
+    </div>
+    <nav>
+      <a href="index.html" class="fr">Accueil</a>
+      <a href="index.html" class="en">Home</a>
+      <a href="#departements" class="fr">Activités</a>
+      <a href="#departements" class="en">Activities</a>
+      <a href="#partenaires" class="fr">Partenaires</a>
+      <a href="#partenaires" class="en">Partners</a>
+      <a href="#don" class="fr">Faire un don</a>
+      <a href="#don" class="en">Donate</a>
+      <a href="#contact" class="fr">Contact</a>
+      <a href="#contact" class="en">Contact</a>
+    </nav>
+    <div class="lang-switcher">
+      <a href="#" onclick="setLang('fr')">FR</a> | 
+      <a href="#" onclick="setLang('en')">EN</a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1 class="fr">Bienvenue à La Corbeille Solidaire</h1>
+    <h1 class="en">Welcome to La Corbeille Solidaire</h1>
+    <button class="fr" onclick="location.href='#departements'">Découvrir nos actions</button>
+    <button class="en" onclick="location.href='#departements'">Discover our actions</button>
+    <button class="fr" onclick="location.href='#don'">Faire un don</button>
+    <button class="en" onclick="location.href='#don'">Donate</button>
+  </div>
+
+  <section id="departements">
+    <h2 class="fr">Nos Départements</h2>
+    <h2 class="en">Our Departments</h2>
+    <div class="departements">
+      <div class="departement">
+        <a href="hebergement.html">
+          <strong class="fr">Hébergement social</strong>
+          <strong class="en">Social Housing</strong>
+        </a>
+        <p class="fr">Auberge et hébergement temporaire pour personnes sans abri.</p>
+        <p class="en">Temporary shelter for homeless people.</p>
+      </div>
+      <div class="departement">
+        <strong class="fr">Épicerie sociale & Distribution</strong>
+        <strong class="en">Social Grocery & Distribution</strong>
+        <p class="fr">Produits alimentaires et biens essentiels en ligne et sur place.</p>
+        <p class="en">Food and essential goods online and onsite.</p>
+      </div>
+      <div class="departement">
+        <strong class="fr">Formation et accompagnement</strong>
+        <strong class="en">Training & Support</strong>
+        <p class="fr">Ateliers, certifications, soutien scolaire et accompagnement professionnel.</p>
+        <p class="en">Workshops, certifications, academic & career support.</p>
+      </div>
+      <div class="departement">
+        <strong class="fr">Inclusion numérique</strong>
+        <strong class="en">Digital Inclusion</strong>
+        <p class="fr">Accès aux outils numériques et formation en littératie numérique.</p>
+        <p class="en">Access to digital tools and literacy training.</p>
+      </div>
+      <div class="departement">
+        <strong class="fr">Microcrédit responsable</strong>
+        <strong class="en">Responsible Microcredit</strong>
+        <p class="fr">Accompagnement budgétaire et microcrédits pour familles et individus.</p>
+        <p class="en">Budget coaching and microloans for families & individuals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="impact" style="background:#ecf0f1;">
+    <h2 class="fr">Notre Impact</h2>
+    <h2 class="en">Our Impact</h2>
+    <p class="fr">Nous œuvrons pour réduire la pauvreté, renforcer l’inclusion et offrir des opportunités concrètes.</p>
+    <p class="en">We work to reduce poverty, strengthen inclusion and offer concrete opportunities.</p>
+  </section>
+
+  <section id="partenaires">
+    <h2 class="fr">Nos Partenaires</h2>
+    <h2 class="en">Our Partners</h2>
+    <p class="fr">Nous collaborons avec des entreprises, centres communautaires et institutions.</p>
+    <p class="en">We collaborate with companies, community centers and institutions.</p>
+  </section>
+
+  <section id="don">
+    <h2 class="fr">Faire un don</h2>
+    <h2 class="en">Donate</h2>
+    <p class="fr">Soutenez La Corbeille Solidaire en faisant un don sécurisé.</p>
+    <p class="en">Support La Corbeille Solidaire by making a secure donation.</p>
+    <a href="#" class="fr">Faire un don maintenant</a>
+    <a href="#" class="en">Donate now</a>
+  </section>
+
+  <section id="contact">
+    <h2 class="fr">Contactez-nous</h2>
+    <h2 class="en">Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Nom complet / Full name">
+      <input type="email" placeholder="Votre email / Your email">
+      <textarea rows="4" placeholder="Votre message / Your message"></textarea>
+      <button type="submit" class="submit fr">Envoyer</button>
+      <button type="submit" class="submit en">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p class="fr">© 2025 La Corbeille Solidaire – Tous droits réservés</p>
+    <p class="en">© 2025 La Corbeille Solidaire – All rights reserved</p>
+  </footer>
+
+  <script>
+    function setLang(lang){
+      document.querySelectorAll('.fr').forEach(el=>el.style.display= lang==='fr'?'':'none');
+      document.querySelectorAll('.en').forEach(el=>el.style.display= lang==='en'?'':'none');
+    }
+    // init fr
+    setLang('fr');
+  </script>
+</body>
+</html>
